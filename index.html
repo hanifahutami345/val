@@ -57,42 +57,7 @@
         <p>**jir kene menang ae kon jek coklat, cen dark system kok</p>
         <img src="asset/abe.jpg" alt="Bunga Valentine">
         <p>dahla aku males ngoding ribet ribet</p>
-          <!-- Tambahkan button Reply -->
-        <button id="replyButton">Reply</button>
-        
-  <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var replyButton = document.getElementById('replyButton');
-            var replyPopup = document.getElementById('replyPopup');
-            var replyForm = document.getElementById('replyForm');
-
-            // Show reply pop-up when Reply button is clicked
-            replyButton.addEventListener('click', function() {
-                replyPopup.style.display = 'block';
-            });
-
-            // Close reply pop-up when the form is submitted
-            replyForm.addEventListener('submit', function(event) {
-                event.preventDefault();
-                closeReplyPopup();
-                // Handle the reply submission here (you can add AJAX or other logic)
-            });
-        });
-
-        // Function to close the reply pop-up
-        function closeReplyPopup() {
-            document.getElementById('replyPopup').style.display = 'none';
-        }
-    </script>
-        <!-- Pop-up form untuk balasan -->
-        <div id="replyPopup">
-            <span class="close-button" onclick="closeReplyPopup">&times;</span>
-            <form id="replyForm">
-                <label for="replyMessage">Your Reply:</label>
-                <textarea id="replyMessage" name="replyMessage" rows="4" required></textarea>
-                <br>
-                <button type="submit">Send Reply</button>
-            </form>
+       
         </div>        
     </div>
     
