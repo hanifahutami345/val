@@ -59,20 +59,8 @@
         <p>dahla aku males ngoding ribet ribet</p>
           <!-- Tambahkan button Reply -->
         <button id="replyButton">Reply</button>
-
-        <!-- Pop-up form untuk balasan -->
-        <div id="replyPopup">
-            <span class="close-button" onclick="closeReplyPopup">&times;</span>
-            <form id="replyForm">
-                <label for="replyMessage">Your Reply:</label>
-                <textarea id="replyMessage" name="replyMessage" rows="4" required></textarea>
-                <br>
-                <button type="submit">Send Reply</button>
-            </form>
-        </div>        
-    </div>
-    
-    <script>
+        
+  <script>
         document.addEventListener('DOMContentLoaded', function() {
             var replyButton = document.getElementById('replyButton');
             var replyPopup = document.getElementById('replyPopup');
@@ -96,5 +84,18 @@
             document.getElementById('replyPopup').style.display = 'none';
         }
     </script>
+        <!-- Pop-up form untuk balasan -->
+        <div id="replyPopup">
+            <span class="close-button" onclick="closeReplyPopup">&times;</span>
+            <form id="replyForm">
+                <label for="replyMessage">Your Reply:</label>
+                <textarea id="replyMessage" name="replyMessage" rows="4" required></textarea>
+                <br>
+                <button type="submit">Send Reply</button>
+            </form>
+        </div>        
+    </div>
+    
+  
 </body>
 </html>
